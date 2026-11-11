@@ -5,10 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "festokes_repair"
 dynamic = ["version"]
-dependencies = []
+dependencies = ["ngsolve", "plotly"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.dynamic]
 version = {attr = "festokes_repair.__version__"}
+
